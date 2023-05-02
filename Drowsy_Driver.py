@@ -23,18 +23,18 @@ status=""
 color=(0,0,0)
 
 def compute(ptA,ptB):
-	dist = np.linalg.norm(ptA - ptB)
-	return dist
+	distance = np.linalg.norm(ptA - ptB)
+	return distance
 
 def blinked(a,b,c,d,e,f):
 	up = compute(b,d) + compute(c,e)
 	down = compute(a,f)
-	ratio = up/(2.0*down)
+	ratiocomp = up/(2.0*down)
 
 	#Checking if it is blinked
 	if(ratio>0.25):
 		return 2
-	elif(ratio>0.21 and ratio<=0.25):
+	elif(ratiocomp>0.21 and ratiocomp<=0.25):
 		return 1
 	else:
 		return 0
