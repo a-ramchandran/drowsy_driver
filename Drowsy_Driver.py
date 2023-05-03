@@ -22,8 +22,8 @@ active = 0
 status=""
 color=(0,0,0)
 
-def compute(ptA,ptB):
-	distance = np.linalg.norm(ptA - ptB)
+def compute(pointA,pointB):
+	distance = np.linalg.norm(pointA - pointB)
 	return distance
 
 def blinked(a,b,c,d,e,f):
