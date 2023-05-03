@@ -97,6 +97,6 @@ while True:
 
     cv2.imshow("Frame", frame)
     cv2.imshow("Result of detector", face_frame)
-    key = cv2.waitKey(1)
-    if key == 27:
+    k = cv2.waitKey(1)
+    if k == 27:
       	break
